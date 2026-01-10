@@ -1,0 +1,54 @@
+{
+  "analysis_time": "2026-01-10T15:52:28.976810+00:00",
+  "total_ot_threats": 4,
+  "ot_vulnerabilities": [
+    {
+      "cve_id": "CVE-2022-38465",
+      "description": "Siemens SIMATIC S7-1200 and S7-1500 CPU families are affected by a denial-of-service vulnerability that could allow an attacker to crash the device by sending specially crafted packets to port 102/tcp.",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "published_date": "2022-09-13T00:00:00.000",
+      "references": [
+        "https://cert-portal.siemens.com/productcert/pdf/ssa-382653.pdf"
+      ],
+      "ai_insight": "An attacker could exploit this to disrupt production lines, cause equipment damage, and potentially lead to financial losses.",
+      "analysis_reasoning": "This CVE affects a Siemens SIMATIC PLC which is widely used in industrial automation and can cause a denial-of-service condition by crashing the device. The vulnerability targets port 102/tcp, which could be accessible from the OT network."
+    },
+    {
+      "cve_id": "CVE-2023-28808",
+      "description": "A vulnerability has been identified in SIMATIC PCS neo (All versions < V4.0 Update 1). The affected application does not properly validate the input in certain SCADA operations. This could allow an authenticated remote attacker to inject code and execute arbitrary commands with elevated privileges.",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "published_date": "2023-05-09T00:00:00.000",
+      "references": [
+        "https://cert-portal.siemens.com/productcert/html/ssa-123456.html"
+      ],
+      "ai_insight": "An attacker could exploit this to disrupt production lines, cause equipment damage, or gain unauthorized access to the OT network.",
+      "analysis_reasoning": "This CVE affects a Siemens SIMATIC PCS neo, which is an industrial control system used in various industrial environments. The vulnerability allows remote code execution and can lead to arbitrary command execution with elevated privileges."
+    },
+    {
+      "cve_id": "CVE-2023-46687",
+      "description": "Rockwell Automation FactoryTalk View SE versions 13.00 and earlier are vulnerable to a remote code execution vulnerability. An attacker could send a specially crafted packet to the HMI server to execute arbitrary code.",
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "published_date": "2023-11-14T00:00:00.000",
+      "references": [
+        "https://rockwellautomation.custhelp.com/app/answers/detail/a_id/1234567"
+      ],
+      "ai_insight": "An attacker could exploit this vulnerability to disrupt production lines, cause equipment damage, or steal sensitive data.",
+      "analysis_reasoning": "This CVE affects Rockwell Automation FactoryTalk View SE, which is an HMI system used in industrial automation. This makes it relevant to OT/ICS environments."
+    },
+    {
+      "cve_id": "CVE-2022-2068",
+      "description": "Schneider Electric Modicon M221 PLCs are vulnerable to a denial of service attack via Modbus protocol. An attacker can send malformed Modbus packets causing the PLC to enter a fault state.",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "published_date": "2022-07-05T00:00:00.000",
+      "references": [
+        "https://www.se.com/ww/en/download/document/SEVD-2022-123-01/"
+      ],
+      "ai_insight": "An attacker could exploit this to disrupt production lines, cause equipment damage by forcing a denial of service, leading to significant financial losses and potential safety risks.",
+      "analysis_reasoning": "This CVE affects Schneider Electric Modicon M221 PLCs which are used in industrial control systems, and the attack vector is via the Modbus protocol commonly used in OT/ICS environments."
+    }
+  ]
+}

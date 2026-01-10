@@ -1,0 +1,15 @@
+# Core dependencies
+requests>=2.31.0
+python-dotenv>=1.0.0
+
+# Dashboard
+streamlit>=1.29.0
+
+# Data processing
+pandas>=2.1.0
+
+# LLM Integration
+certifi>=2023.7.22
+charset-normalizer>=3.3.0
+idna>=3.4
+urllib3>=2.0.0
