@@ -30,7 +30,7 @@ This agent automatically:
 
 ---
 
-## ✨ Key Features
+##  Key Features
 
 -  **Smart Two-Stage Filtering** (Keyword + AI Analysis)
 -  **100% Local & Private** (No cloud API calls)
@@ -220,35 +220,7 @@ CVE-2022-38465: Siemens SIMATIC S7-1500 DoS via port 102/tcp
 }
 ```
 
----
-
-##  Project Structure
-
-```
-autonomous-ot-threat-agent/
-│
-├── agent/                      # Core logic
-│   ├── agent_runner.py        # Main orchestrator ← START HERE
-│   ├── cve_fetcher.py         # NVD API integration
-│   ├── llm_analyzer.py        # AI analysis (Ollama)
-│   ├── ot_filter.py           # Two-stage filtering
-│   ├── config.py              # Settings & prompts
-│   └── test_with_Real_cves.py # Validation test ← RUN FIRST
-│
-├── dashboard/
-│   └── streamlit_app.py       # Interactive UI
-│
-├── data/                       # Auto-generated
-│   ├── output_sample.json     # Main deliverable
-│   ├── processed_cves.json    # Tracking
-│   └── last_run.json          # Timestamp
-│
-└── diagrams,images/            # Documentation
-```
-
----
-
-## 📊 Validation Results
+##  Validation Results
 
 Tested with 4 real OT CVEs + 1 IT CVE:
 
@@ -262,26 +234,6 @@ Tested with 4 real OT CVEs + 1 IT CVE:
 
 **Accuracy: 100%** (5/5 correct)
 
-### Sample Output
-
-`data/output_sample.json`:
-
-```json
-{
-  "analysis_time": "2026-01-10T15:44:21Z",
-  "total_ot_threats": 4,
-  "ot_vulnerabilities": [
-    {
-      "cve_id": "CVE-2022-38465",
-      "description": "Siemens SIMATIC S7-1200 DoS vulnerability...",
-      "cvss_score": 7.5,
-      "cvss_severity": "HIGH",
-      "ai_insight": "Could disrupt production lines, cause equipment damage...",
-      "analysis_reasoning": "Affects Siemens SIMATIC PLC widely used in automation..."
-    }
-  ]
-}
-```
 
 ---
 
@@ -341,7 +293,7 @@ cves = fetcher.fetch_latest_cves(incremental=True)
 
 ---
 
-## 🧪 Testing
+##  Testing
 
 ```bash
 # Validate with real OT CVEs
