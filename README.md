@@ -555,22 +555,12 @@ This project demonstrates:
 5. **Data Visualization**: Building interactive dashboards with Streamlit
 6. **Software Engineering**: Modular architecture, error handling, testing
 
----
-
-## 🚀 Future Enhancements
-
-- [ ] Email/Slack notifications for critical threats
-- [ ] CVE severity-based auto-prioritization
-- [ ] Historical trend analysis and reporting
-- [ ] Multi-LLM support (OpenAI, Claude, Gemini)
-- [ ] RESTful API for integration with SIEM systems
-- [ ] Automated remediation suggestions
-
----
-
 ## 👨‍💻 Author
 
 **Bakhom Ramzy**  
+🔗 **LinkedIn:** [linkedin.com/in/bakhommounir](https://linkedin.com/in/bakhommounir)  
+📧 **Email:** [bakhommounir@gmail.com](mailto:bakhommounir@gmail.com)
+
 Built for the **ControlPoint AI & Data Internship Challenge – January 2026**
 
 ---
