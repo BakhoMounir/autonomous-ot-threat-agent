@@ -16,15 +16,15 @@
 
 ---
 
-## 🎯 What Does This Do?
+## What Does This Do?
 
 Every day, hundreds of security vulnerabilities (CVEs) are published. **But only 1-5% matter for factories and industrial plants.**
 
 This agent automatically:
-1. ✅ Fetches latest CVEs from the National Vulnerability Database
-2. ✅ Filters out IT noise (WordPress, Chrome, etc.)
-3. ✅ Identifies OT/ICS threats using local AI
-4. ✅ Shows results in a live dashboard
+1.  Fetches latest CVEs from the National Vulnerability Database
+2.  Filters out IT noise (WordPress, Chrome, etc.)
+3.  Identifies OT/ICS threats using local AI
+4.  Shows results in a live dashboard
 
 **Why it matters:** Factory managers can't manually check hundreds of CVEs daily. This agent does it for them.
 
@@ -32,15 +32,15 @@ This agent automatically:
 
 ## ✨ Key Features
 
-- 🤖 **Smart Two-Stage Filtering** (Keyword + AI Analysis)
-- 🔒 **100% Local & Private** (No cloud API calls)
-- 🔄 **Incremental Mode** (Only processes new CVEs)
-- 📊 **Real-Time Dashboard** (Live monitoring + controls)
-- ⚡ **Production-Ready** (Error handling, continuous mode)
+-  **Smart Two-Stage Filtering** (Keyword + AI Analysis)
+-  **100% Local & Private** (No cloud API calls)
+-  **Incremental Mode** (Only processes new CVEs)
+-  **Real-Time Dashboard** (Live monitoring + controls)
+-  **Production-Ready** (Error handling, continuous mode)
 
 ---
 
-## 🏗️ Architecture
+## Architecture
 
 <div align="center">
   <img src="diagrams,images/Architecture/architecture.jpg" alt="System Architecture" width="90%">
@@ -68,7 +68,7 @@ This agent automatically:
 
 ---
 
-## 🚀 Quick Start
+##  Quick Start
 
 ### Prerequisites
 
@@ -96,7 +96,7 @@ NVD_API_KEY = 'YOUR_API_KEY_HERE'
 
 ---
 
-## 💻 How to Run
+##  How to Run
 
 ### Option 1: Test First (Recommended)
 
@@ -157,13 +157,13 @@ Opens at `http://localhost:8501`
 
 ---
 
-## 🧠 Prompt Engineering & Logic
+##  Prompt Engineering & Logic
 
 ### The Challenge
 
 LLMs don't understand industrial systems by default. A CVE about "Siemens software" could be:
-- ❌ Siemens EDA (design software) → Not OT
-- ✅ Siemens SIMATIC (PLC) → Critical OT threat!
+-  Siemens EDA (design software) → Not OT
+-  Siemens SIMATIC (PLC) → Critical OT threat!
 
 ### Our Solution
 
@@ -222,7 +222,7 @@ CVE-2022-38465: Siemens SIMATIC S7-1500 DoS via port 102/tcp
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 autonomous-ot-threat-agent/
@@ -239,7 +239,7 @@ autonomous-ot-threat-agent/
 │   └── streamlit_app.py       # Interactive UI
 │
 ├── data/                       # Auto-generated
-│   ├── output_sample.json     # 📌 Main deliverable
+│   ├── output_sample.json     # Main deliverable
 │   ├── processed_cves.json    # Tracking
 │   └── last_run.json          # Timestamp
 │
@@ -254,11 +254,11 @@ Tested with 4 real OT CVEs + 1 IT CVE:
 
 | CVE ID | Type | Vendor | Expected | Result |
 |--------|------|--------|----------|--------|
-| CVE-2022-38465 | OT | Siemens SIMATIC | ✅ Relevant | ✅ Detected |
-| CVE-2023-28808 | OT | Siemens PCS neo | ✅ Relevant | ✅ Detected |
-| CVE-2023-46687 | OT | Rockwell FactoryTalk | ✅ Relevant | ✅ Detected |
-| CVE-2022-2068 | OT | Schneider Modicon | ✅ Relevant | ✅ Detected |
-| CVE-2023-1234 | IT | WordPress | ❌ Not relevant | ✅ Rejected |
+| CVE-2022-38465 | OT | Siemens SIMATIC |  Relevant |  Detected |
+| CVE-2023-28808 | OT | Siemens PCS neo |  Relevant |  Detected |
+| CVE-2023-46687 | OT | Rockwell FactoryTalk |  Relevant |  Detected |
+| CVE-2022-2068 | OT | Schneider Modicon |  Relevant |  Detected |
+| CVE-2023-1234 | IT | WordPress |  Not relevant |  Rejected |
 
 **Accuracy: 100%** (5/5 correct)
 
@@ -369,11 +369,11 @@ python agent/agent_runner.py
 
 ---
 
-## 👨‍💻 Author
+##  Author
 
 **Bakhom Ramzy**  
-🔗 [linkedin.com/in/bakhommounir](https://linkedin.com/in/bakhommounir)  
-📧 [bakhommounir@gmail.com](mailto:bakhommounir@gmail.com)
+ [linkedin.com/in/bakhommounir](https://linkedin.com/in/bakhommounir)  
+ [bakhommounir@gmail.com](mailto:bakhommounir@gmail.com)
 
 Built for **ControlPoint AI Internship Challenge – January 2026**
 
