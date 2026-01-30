@@ -327,7 +327,7 @@ python agent/agent_runner.py
  [linkedin.com/in/bakhommounir](https://linkedin.com/in/bakhommounir)  
  [bakhommounir@gmail.com](mailto:bakhommounir@gmail.com)
 
-Built for **ControlPoint AI Internship Challenge – January 2026**
+
 
 ---
 
