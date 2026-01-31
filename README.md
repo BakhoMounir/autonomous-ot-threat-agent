@@ -4,8 +4,7 @@
 
   <h1>Autonomous OT Threat Intelligence Agent</h1>
   <p>
-    <strong>AI-Powered Cybersecurity for Industrial Control Systems</strong><br>
-    ControlPoint AI Internship Challenge – January 2026
+    <strong>AI-Powered Cybersecurity for Industrial Control Systems</strong>
   </p>
 
   <br>
